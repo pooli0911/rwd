@@ -1,0 +1,108 @@
+body{
+    margin:0;
+    padding:0;
+    height:100%;
+}
+
+figure,img,
+h1,h2,h3,h4,h5,h6,
+dl,dd,dt,ul,li,
+p{
+	border:none;
+	padding:0;
+	margin:0;
+}
+main,
+header,
+footer,
+nav,
+article,
+section{
+    display: block;
+}
+ul{
+	list-style:none;
+}
+img{
+	vertical-align:bottom;
+}
+/* フォントサイズ
+------------------------------------------ */
+// @import url(https://fonts.googleapis.com/css?family=Lato:400,300italic,300,700,100,100italic);
+// @import url(https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,400,700,900);
+/*light*/
+@font-face {
+    font-family: 'Work Sans';
+    src: url('/font/WorkSans-ExtraLight.ttf') format('truetype');
+    font-weight: 100;
+}
+/*light*/
+@font-face {
+    font-family: 'Work Sans';
+    src: url('/font/WorkSans-Light.ttf') format('truetype');
+     font-weight: 200;
+     font-style: light;
+}
+/*Medium*/
+@font-face {
+    font-family: 'Work Sans';
+    src: url('/font/WorkSans-Regular.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Noto Sans';
+    src: url('/font/NotoSansSC-Thin.otf') format('opentype');
+    font-weight: 100;
+}
+/*light*/
+@font-face {
+    font-family: 'Noto Sans';
+    src: url('/font/NotoSansSC-Light.otf') format('opentype');
+     font-weight: 200;
+     font-style: light;
+}
+/*Medium*/
+@font-face {
+    font-family: 'Noto Sans';
+    src: url('/font/NotoSansSC-Regular.otf') format('opentype');
+    font-weight: 300;
+    font-style: normal;
+}
+*{
+}
+body{
+	font-size:14px;
+	line-height:1.7em;
+	font-family: 'Work Sans', 'Noto Sans', sans-serif;
+    font-weight:200;
+}
+
+input{
+    font-family:"Work Sans", "Noto Sans",sans-serif;
+}
+
+
+em{
+	font-style: normal; font-weight: bold;
+
+}
+
+a{
+	color:#fff;
+	text-decoration:none;
+    -webkit-transition:opacity 0.2s ease-in-out;
+    -moz-transition:opacity  0.2s ease-in-out;
+    -o-transition:opacity  0.2s ease-in-out;
+    transition:opacity  0.2s ease-in-out;
+}
+button{
+    -webkit-transition: opacity 0.2s ease-in-out;
+    -moz-transition: opacity 0.2s ease-in-out;
+    -o-transition: opacity 0.2s ease-in-out;
+    transition: opacity 0.2s ease-in-out;
+}
+a:hover,
+button:hover{
+	opacity:0.7
+}
