@@ -17,18 +17,70 @@
             <input type="hidden" id="lang" value="">
             <header class="">
                 <div class="head">
+                    <div id="menu">
+                        <button type="button" class="pc_hamburger">
+                            <div class="pc_hamburger_icon"></div>
+                        </button>
 
+                        <div class="menu_bg"></div>
+
+                        <nav class="pc_menu">
+                            <div class="main_menu">
+                                <div class="menu_list_wrap">
+                                    <ul class="menu_list">
+                                        <li>
+                                            <a href="/information" class="highlight">Information</a>
+                                        </li>
+
+                                        <li class="titles">
+                                            <a href="/movies/index" class="highlight ">All titles</a>
+
+                                        </li>
+
+                                        <li class="titles indent">
+                                            <span class="movie_category highlight " data-toggle="dropdown" role="button"
+                                                aria-expanded="false">Film</span>
+                                        </li>
+
+                                        <li class="titles indent">
+                                            <span class="movie_category tv highlight " data-toggle="dropdown"
+                                                role="button" aria-expanded="false">TV Series</span>
+                                        </li>
+
+                                        <li class="titles indent">
+                                            <span class="movie_category highlight " data-toggle="dropdown" role="button"
+                                                aria-expanded="false">Godzilla</span>
+                                        </li>
+
+                                        <li class="titles indent">
+                                            <span class="movie_category highlight " data-toggle="dropdown" role="button"
+                                                aria-expanded="false">Kurosawa</span>
+                                        </li>
+                                        <li>
+                                            <a href="/studio-theater" class="highlight">
+                                                Studio </a>
+                                        </li>
+                                        <li>
+                                            <a href="/company" class="highlight">
+                                                Company </a>
+                                        </li>
+                                    </ul>
+                                </div><!-- /.menu_list_wrap-->
+                            </div><!-- /.main_menu -->
+                        </nav>
+                    </div><!-- /#menu -->
                     <!-- logo -->
                     <div id="logo">
                         <a href="/">
                             <h1 class="logo_img"><img src="img/logo.png" alt="TOHO" width="56" height="56"></h1>
                         </a>
                     </div>
+                    <!-- language -->
 
                     <!-- 導覽列 -->
                     <nav id="h_menu">
                         <ul class="lang">
-                            <li><a href="#" class="lang_zh"><i></i>中文</a></li>
+                            <li><a href="#" class="lang_zh" id="h_menu"><i></i>中文</a></li>
                         </ul>
                         <ul class="menu">
                             <li class=""><a href="#">Information</a></li>
@@ -120,31 +172,11 @@
                             <a href="#">
                                 <div class="poster_img" style="background-image: url(img/img_content_1.png);">
                                 </div>
-                                <div class="hover">
-                                    <div class="hover_box">
-                                        <div class="poster_img" style="background-image:url(img/img_content_1.png)">
-                                        </div>
-                                    </div>
-                                    <div class="info">
-                                        <p class="movie_title">僕のヒーローアカデミア</p>
-                                        <time class="year">2019</time>
-                                    </div>
-                                </div>
                             </a>
                         </li>
                         <li data-filepath="img/img_content_2.png">
                             <a href="#">
                                 <div class="poster_img" style="background-image: url(img/img_content_2.png);">
-                                </div>
-                                <div class="hover">
-                                    <div class="hover_box">
-                                        <div class="poster_img" style="background-image:url(img/img_content_2.png)">
-                                        </div>
-                                    </div>
-                                    <div class="info">
-                                        <p class="movie_title">空の青さを知る人よ</p>
-                                        <time class="year">2019</time>
-                                    </div>
                                 </div>
                             </a>
                         </li>
@@ -152,31 +184,11 @@
                             <a href="#">
                                 <div class="poster_img" style="background-image: url(img/img_content_3.png);">
                                 </div>
-                                <div class="hover">
-                                    <div class="hover_box">
-                                        <div class="poster_img" style="background-image:url(img/img_content_3.png)">
-                                        </div>
-                                    </div>
-                                    <div class="info">
-                                        <p class="movie_title">蜜蜂と遠雷</p>
-                                        <time class="year">2019</time>
-                                    </div>
-                                </div>
                             </a>
                         </li>
                         <li data-filepath="img/img_content_4.png">
                             <a href="#">
                                 <div class="poster_img" style="background-image: url(img/img_content_4.png);">
-                                </div>
-                                <div class="hover">
-                                    <div class="hover_box">
-                                        <div class="poster_img" style="background-image:url(img/img_content_4.png)">
-                                        </div>
-                                    </div>
-                                    <div class="info">
-                                        <p class="movie_title">ハロー・ワールド</p>
-                                        <time class="year">2019</time>
-                                    </div>
                                 </div>
                             </a>
                         </li>
@@ -184,31 +196,11 @@
                             <a href="#">
                                 <div class="poster_img" style="background-image: url(img/img_content_5.png);">
                                 </div>
-                                <div class="hover">
-                                    <div class="hover_box">
-                                        <div class="poster_img" style="background-image:url(img/img_content_5.png)">
-                                        </div>
-                                    </div>
-                                    <div class="info">
-                                        <p class="movie_title">DRAGON QUEST -your story-</p>
-                                        <time class="year">2019</time>
-                                    </div>
-                                </div>
                             </a>
                         </li>
                         <li data-filepath="img/img_content_6.png">
                             <a href="#">
                                 <div class="poster_img" style="background-image: url(img/img_content_6.png);">
-                                </div>
-                                <div class="hover">
-                                    <div class="hover_box">
-                                        <div class="poster_img" style="background-image:url(img/img_content_6.png)">
-                                        </div>
-                                    </div>
-                                    <div class="info">
-                                        <p class="movie_title">アルキメデスの大戦</p>
-                                        <time class="year">2019</time>
-                                    </div>
                                 </div>
                             </a>
                         </li>
@@ -216,31 +208,11 @@
                             <a href="#">
                                 <div class="poster_img" style="background-image: url(img/img_content_7.png);">
                                 </div>
-                                <div class="hover">
-                                    <div class="hover_box">
-                                        <div class="poster_img" style="background-image:url(img/img_content_7.png)">
-                                        </div>
-                                    </div>
-                                    <div class="info">
-                                        <p class="movie_title">天気の子</p>
-                                        <time class="year">2019</time>
-                                    </div>
-                                </div>
                             </a>
                         </li>
                         <li data-filepath="img/img_content_8.png">
                             <a href="#">
                                 <div class="poster_img" style="background-image: url(img/img_content_8.png);">
-                                </div>
-                                <div class="hover">
-                                    <div class="hover_box">
-                                        <div class="poster_img" style="background-image:url(img/img_content_8.png)">
-                                        </div>
-                                    </div>
-                                    <div class="info">
-                                        <p class="movie_title">プロメア</p>
-                                        <time class="year">2019</time>
-                                    </div>
                                 </div>
                             </a>
                         </li>
@@ -248,31 +220,11 @@
                             <a href="#">
                                 <div class="poster_img" style="background-image: url(img/img_content_9.png);">
                                 </div>
-                                <div class="hover">
-                                    <div class="hover_box">
-                                        <div class="poster_img" style="background-image:url(img/img_content_9.png)">
-                                        </div>
-                                    </div>
-                                    <div class="info">
-                                        <p class="movie_title">君は月夜に光り輝く</p>
-                                        <time class="year">2019</time>
-                                    </div>
-                                </div>
                             </a>
                         </li>
                         <li data-filepath="img/img_content_10.png">
                             <a href="#">
                                 <div class="poster_img" style="background-image: url(img/img_content_10.png);">
-                                </div>
-                                <div class="hover">
-                                    <div class="hover_box">
-                                        <div class="poster_img" style="background-image:url(img/img_content_10.png)">
-                                        </div>
-                                    </div>
-                                    <div class="info">
-                                        <p class="movie_title">フォルトゥナの瞳く</p>
-                                        <time class="year">2020</time>
-                                    </div>
                                 </div>
                             </a>
                         </li>

@@ -1,9 +1,13 @@
+
 @media screen and (max-width:1280px){
     #menu .pc_menu .main_menu{
     }
     #menu .pc_menu .movie_genre_wrap{
         left: 15vw;
         width: 20vw;
+    }
+    header .head #menu .pc_hamburger{
+        display: none;
     }
 }
 @media screen and (max-width:768px){
@@ -14,6 +18,7 @@
     header #h_menu ul li{
         font-size:0.8rem;
     }
+
     #main{
         background-size:100% auto;
         //background-image:url(/img/sp_top_main_bg.png);
@@ -22,13 +27,6 @@
 
     #menu .pc_menu .main_menu{
         width: 36vw;
-    }
-    #menu .pc_menu .movie_genre_wrap{
-        left: 36vw;
-        width: 58vw;
-    }
-    #menu .pc_menu .movie_genre{
-        padding-top: 60px;
     }
     #menu a,
     #menu .highlight,
@@ -52,7 +50,7 @@
         font-size:12px;
     }
     #menu .pc_menu .sp_lang .lang i{
-        display:inline-block;
+        /* display:inline-block; */
         width:16px;
         height:16px;
         background-image:url(/img/icon_earth.svg);
@@ -61,7 +59,12 @@
         margin-right:0.5em;
         vertical-align:-4px;
     }
-
+    header #h_menu .menu{
+        display:none;
+    }
+    header .head #menu .pc_hamburger{
+        display:block;
+    }
     #information{
         width:100%;
         margin:auto;
@@ -102,7 +105,6 @@
         //padding-bottom:130vw;
         padding-bottom:0;
     }
-    /* #1738対応 */
     #main #wrap_main_slide{
         position: static;
 //        height: 105vw;
@@ -112,6 +114,7 @@
         height:60px;
     }
     header #menu .pc_hamburger{
+        display:block;
         width: 30px;
         width: 8vw;
         height:36px;
@@ -166,17 +169,6 @@
     //    padding:0.5rem 2rem .5rem 1rem;
         padding-left: 0.8rem;
     }
-    #menu .pc_menu .movie_genre{
-        padding-left: 1rem;
-        -webkit-overflow-scrolling: touch;
-    }
-    #menu .pc_menu .main_menu .movie_genre li{
-        padding-left:0;
-        //padding:0.5rem 1rem .5rem 1rem;
-    }
-    #menu .pc_menu .movie_genre ul{
-        padding-right: 1rem;
-    }
     #menu .pc_menu .menu_list > li .highlight,
     #menu .pc_menu .menu_list > li .movie_genre a{
         letter-spacing:1px;
@@ -187,47 +179,6 @@
     }
     #menu .pc_menu #search_form input[name=word]{
         font-size:16px;
-    }
-    #wrap_main_slide .bg_contorols{
-        display:none;
-        top:18px;
-        z-index:9000;
-    }
-
-
-    #main .main_img{
-        top: 9rem;
-        width:40%;
-        z-index:auto;
-    }
-    #main .main_img[data-type="0"]{
-        top: 9rem;
-        width: 42vw;
-    }
-    #main .main_img[data-type="1"]{
-        top: 9rem;
-    }
-    #main .main_img[data-type="1"] h2{
-        font-size: 2rem;
-    }
-    #main .main_img[data-type="2"]{
-        //top:8rem;
-        top:12rem;
-    }
-    #main .main_img[data-type="3"]{
-        top:9rem;
-        width:100%;
-    }
-    #main .main_img[data-type="3"] h2{
-        font-size:2rem;
-        padding-bottom:0;
-    }
-    #main .main_img .link{
-        width:90%;
-    }
-    #main .main_img[data-type="3"] .link{
-        width:40%;
-        margin-top:0;
     }
 
     #wrap_main_slide .bg_contorols .gauge{
@@ -747,25 +698,6 @@
         width: 100%;
         margin-top:30px;
     }
-    .search .search_result{
-        font-size:20px;
-    }
-    .search_input{
-        width:85%;
-    }
-    .search .doc-body{
-        width:90%;
-    }
-    .search .information-list {
-        width: 100%;
-    }
-    .information-list .info_img {
-        width: 60px;
-        height: 85px;
-    }
-    .search .info_contents h3{
-        font-size:1rem;
-    }
     #titles .link {
         position: static;
         margin: 0px auto 20px;
@@ -859,6 +791,7 @@
     #gallery > ul > li, .kaiju-photo .kaiju-article ul > li{
         height:105px;
     }
+    
 }
 @media screen and (max-width: 320px){
     #menu .pc_menu .main_menu li{
