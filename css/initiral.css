@@ -26,24 +26,23 @@ ul{
 img{
 	vertical-align:bottom;
 }
-/* フォントサイズ
------------------------------------------- */
+
 // @import url(https://fonts.googleapis.com/css?family=Lato:400,300italic,300,700,100,100italic);
 // @import url(https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,400,700,900);
-/*light*/
+
 @font-face {
     font-family: 'Work Sans';
     src: url('/font/WorkSans-ExtraLight.ttf') format('truetype');
     font-weight: 100;
 }
-/*light*/
+
 @font-face {
     font-family: 'Work Sans';
     src: url('/font/WorkSans-Light.ttf') format('truetype');
      font-weight: 200;
      font-style: light;
 }
-/*Medium*/
+
 @font-face {
     font-family: 'Work Sans';
     src: url('/font/WorkSans-Regular.ttf') format('truetype');
@@ -55,14 +54,14 @@ img{
     src: url('/font/NotoSansSC-Thin.otf') format('opentype');
     font-weight: 100;
 }
-/*light*/
+
 @font-face {
     font-family: 'Noto Sans';
     src: url('/font/NotoSansSC-Light.otf') format('opentype');
      font-weight: 200;
      font-style: light;
 }
-/*Medium*/
+
 @font-face {
     font-family: 'Noto Sans';
     src: url('/font/NotoSansSC-Regular.otf') format('opentype');
