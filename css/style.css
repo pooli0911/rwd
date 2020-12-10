@@ -16,6 +16,35 @@ img{
     -ms-interpolation-mode: bicubic;
 //    pointer-events: none;
 }
+main{
+    padding:140px 0 60px;
+}
+main.top{
+    padding-top:0;
+    padding-bottom:0;
+}
+main.movies{
+    padding-top:138px;
+}
+
+#main{
+    width:100%;
+    background-size:cover;
+    background-color:#000;
+    background-repeat:no-repeat;
+    text-align:center;
+    position:relative;
+    padding-bottom:123%;
+}
+#main .main_img{
+    position:absolute;
+    top:20%;
+    width:25%;
+    z-index:20;
+}
+#main .main_img h2{
+    text-indent:-9999px;
+}
 /* header */
 header{
     position:fixed;
@@ -159,7 +188,15 @@ header #h_menu ul.menu li:hover a{
     border-bottom:2px solid #a58633;
     opacity:1;
 }
-
+#bg_main_ttop{
+    /* position: absolute; */
+    top: 0;
+    left: 0;
+    right: 0;  
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+}
 /* information */
 #information h3,
 #titles h3,
@@ -361,7 +398,7 @@ header #h_menu ul.menu li:hover a{
 #titles{
     //position:relative;
     position:absolute;
-    margin-top:-10.1%;
+    margin-top:-10%;
     z-index:20;
     width:100%;
     right:0;
@@ -493,19 +530,50 @@ main.top {
     display:block;
 }
 
+/* godzilla */
+#godzilla .main_img{
+    background-image:url(/img/top_bg_godzilla.shadow.jpg);
+    background-size:cover;
+    background-position:top left;
+    background-repeat: no-repeat;
+    width:100%;
+    padding-bottom:56.25%;
+    position:relative;
+//    z-index:-1;
+}
+#godzilla .title{
+    width:25%;
+    position:absolute;
+    top:33%;
+    left:7.5%;
+    z-index:20;
+}
+#godzilla .title h3{
+    width:100%;
+    height:0;
+    padding-bottom:51%;
+    background-image:url(/img/top_title_godzilla.png);
+    background-size:100% auto;
+    background-position:top left;
+    margin-bottom:8%;
+    -webkit-transition: opacity 0.2s ease-in-out;
+    -moz-transition: opacity 0.2s ease-in-out;
+    -o-transition: opacity 0.2s ease-in-out;
+    transition: opacity 0.2s ease-in-out;
+}
+#godzilla .title h3:hover{
+    opacity: .7;
+}
+#godzilla .title .link{
+    text-align:center;
+    margin-top:30px;
+}
+#kurosawa .title .link{
+    text-align:center;
+    margin-top:50px;
+}
+#godzilla .title .link a img,{
+    width:240px;
+    height:auto;
+}
 
-/* 個別 */
-/*
-#lineup > .gallery li:hover:nth-child(1) .hover,
-#lineup > .gallery li:hover:nth-child(6) .hover,
-.slider .slide-first:hover .hover{
-    left: 10%;
-    right: auto;
-}
-#lineup > .gallery li:hover:nth-child(5) .hover,
-#lineup > .gallery li:hover:nth-child(10) .hover,
-.slider .slide-last:hover .hover{
-    left: auto;
-    right: 10%;
-}
-*/
