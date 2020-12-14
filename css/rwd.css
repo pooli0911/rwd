@@ -1,4 +1,14 @@
-
+@media screen and (max-width:1440px){
+    #menu .pc_menu .main_menu{
+    }
+    #menu .pc_menu .movie_genre_wrap{
+        left: 15vw;
+        width: 20vw;
+    }
+    header .head #menu .pc_hamburger{
+        display: none;
+    }
+}
 @media screen and (max-width:1280px){
     #menu .pc_menu .main_menu{
     }
@@ -65,6 +75,11 @@
     header .head #menu .pc_hamburger{
         display:block;
     }
+    .lang{
+        justify-content: flex-end;
+        right: 16px;
+        top: 27px;
+    }
     #information{
         width:100%;
         margin:auto;
@@ -119,8 +134,7 @@
         width: 8vw;
         height:36px;
         height: 8vw;
-        //background-size:100% auto;
-        //background-repeat:no-repeat;
+        background-size:100% auto;
         margin: 0 16px;
         font-size:.5rem;
     }
@@ -187,8 +201,7 @@
     }
     #information{
         bottom:auto;
-//        top:13.5%;
-//        top:130vw;
+        top:130vw;
         position:static;
         padding-bottom:10%;
     }
@@ -201,9 +214,8 @@
         padding:1.5rem 1rem 2rem;
     }
     #titles{
-//        position:static;
-        margin-top:50px;
-        top:0;
+        position:static;
+        margin-top:100px;
     }
 
     #information .info_list li a{
@@ -285,9 +297,10 @@
 
     /* slider */
     .slider{
-        //margin-top:-50px;
-        //padding-bottom:20%;
+        margin-top:-50px;
+        padding-bottom:20%;
     }
+    
     .prev,
     .next{
         width: 50%;
@@ -318,7 +331,7 @@
         transform: rotate(135deg);
     }
     .slider{
-         //transform:translateY(-10%);
+         transform:translateY(-10%);
     }
     .slider .gallery li .hover,
     .slider .gallery li .hover .info{
@@ -364,7 +377,6 @@
         -moz-transition:-moz-transform .3s ease-in;
         -ms-transition:-ms-transform .3s ease-in;
     }
-    .slider ul li .poster_img { }
     .slider ul .slick-center .poster_img:after{
         background: none;
     }
@@ -470,103 +482,7 @@
 
 
 
-    /* movie page */
-    .movies_navi{
-        top:60px;
-    }
-    .movies_navi nav ul{
-        display:flex;
-        width:100%;
-        justify-content:center;
-    }
-    .movies_navi nav ul li{
-        margin:0 .5rem;
-        -webkit-tap-highlight-color: transparent;
-    }
-    .movies_navi nav ul li.separater{
-    //    top:17px;
-    }
-    .movies_navi nav > ul > li:first-child,
-    .movies_navi nav > ul > li:first-child + .separater{
-        display:none;
-    }
-    .movies_navi nav ul li a,
-    .movies_navi nav ul li span{
-        font-size:12px;
-        padding:5px 0;
-        letter-spacing:0px;
-    }
-    .movies_navi .sub_menu{
-        padding: 1rem 0 2rem;
-    }
-    .movies_navi nav .sub_menu ul{
-        width:90%;
-        width:90vw;
-        justify-content:left;
-    }
-    .movies_navi nav .sub_menu ul li{
-        width:33%;
-        min-width:auto;
-        margin: .5rem 0;
-    }
-    .movies_navi nav .sub_menu ul li a{
-        padding: .5rem 1rem;
-        letter-spacing: inherit;
-        word-break: break-all;
-    }
-    .page_title h2, .movie-title h2{
-        margin:0 0 45px;
-        font-size:1.75rem;
-        letter-spacing:0.5px;
-        padding:22px 20px 0;
-    }
-    main.movies {
-        padding-top: 113px;
-    }
-    .movie_list ul{
-        width:90%;
-    }
-    .movie_list ul li{
-        width:48.5%;
-        margin-bottom:10px;
-    }
-    .movie_list ul li:nth-child(4n+1){
-        margin-left:2.66%;
-    }
-    .movie_list ul li:nth-child(2n+1){
-        margin-left:0;
-    }
-    .movie-detail .movie-images{
-        float:none;
-        width:80%;
-        margin:0 auto 20px;
-    }
-    .doc-body *,
-    .movie-detail .movie-body *{
-        letter-spacing:normal !important;
-    }
-    .movie-detail .movie-content{
-        float:none;
-        width:100%;
-        font-size:14px;
-    }
-    .movie-detail .movie-content h3, .movie-detail #gallery h3, .movie-detail .kaiju-photo h3, .line_decoration{
-        font-size:20px;
-    }
-    .movie-data{
-        padding:10px;
-        font-size:12px;
-    }
-    .movie-data .accordion-body{
-        width:100%;
-    }
-    .movie-data .accordion-body > dl > dt{
-        min-width:150px;
-    }
-    .head-movie iframe{
-        width:100% !important;
-        height:auto;
-    }
+
     #gallery > ul > li, .kaiju-photo .kaiju-article ul > li{
         width:48%;
     }
@@ -575,28 +491,7 @@
         max-height:none;
         margin-bottom:1%;
     }
-    .kaiju-photo .kaiju-article ul > li{
-        margin-bottom:4%;
-    }
-    #gallery > ul > li img, .kaiju-photo .kaiju-article ul > li img{
-        margin-top:0;
-    }
-    #gallery > ul > li:nth-child(2n+1), .kaiju-photo .kaiju-article ul > li:nth-child(2n+1){
-        margin-left:0;
-    }
-    #gallery ul > li:nth-child(2n), .kaiju-photo .kaiju-article ul > li:nth-child(2n), .rel_movie ul > li:nth-child(2n){
-        margin-left:1%;
-    }
-    #gallery ul > li{
-        margin-top:2%;
-    }
-    #photo-modal figure{
-        top:15%;
-    }
-    #photo-modal figure img{
-        width:80%;
-        height:auto;
-    }
+
     .information-list .info_contents{
         float:none;
         margin-left:70px;
@@ -632,71 +527,6 @@
     }
     .information_contents{
 
-    }
-    .terms .page_title h2, .clip .page_title h2{
-        margin:0 0 20px;
-    }
-    .terms, .clip{
-        padding:0;
-    }
-    .terms .doc-body, .clip .doc-body{
-        width:90%;
-    }
-    .clip .line_decoration:before,
-    .clip .line_decoration:after{
-        content:"";
-        display:none;
-    }
-    .doc-body .secureimg{
-        display:block;
-        margin:50px auto;
-    }
-    .doc-body .secureimg > div:first-child{
-        width:60%;
-        margin:0 auto;
-    }
-    .doc-body .secureimg > div + div{
-        margin-top:30px;
-        display:block;
-    }
-    .president .wrap{
-        width:90%;
-        box-sizing:border-box;
-        padding:10px;
-    }
-    .president .president_msg{
-        float:none;
-        width:100%;
-    }
-    .president .wrap .president_figure{
-        width:70%;
-        float:none;
-        margin:0 auto;
-    }
-    .president .wrap .text{
-        width:auto;
-        font-weight:100;
-    }
-    .doc-body.normal-box-3col{
-        width:60%;   
-        display:block;
-    }
-    .doc-body .norma-box{
-        width:100%;
-    }
-    .doc-body .norma-box + .norma-box{
-        margin-top:30px;
-    }
-    #access-info .wrap{
-        width:90%;
-        background:#111;
-        padding:30px 50px;
-        display:block;
-        box-sizing:border-box;
-    }
-    #access-info .map.right {
-        width: 100%;
-        margin-top:30px;
     }
     #titles .link {
         position: static;
@@ -751,58 +581,15 @@
         text-indent:-200%;
         overflow:hidden;
     }
-    .president .president_msg .sp_show{
-        display:inline-block;
-    }
-    .president .president_msg .sp_hide{
-        display:none;
-    }
-    .icon.external{
-        letter-spacing: -0.05rem
-    }
-    .icon.external:after{
-        margin-left:4px;
-    }
+    
     #menu .pc_menu .main_menu .search form{
         padding-right:30px;
     }
     #menu .pc_menu .search .submit{
         right:0.5rem;
     }
-    .doc-body .terms_contents .pdf_dl button + button{
-        margin-left:0px;
-        margin-top:20px;
-    }
-    .icon.external:after{
-        width:15px;
-        height:12px;
-    }
     footer nav#utility-menu li a.link.icon.external:after{
         width:12px;
         height:10px;
-    }
-}
-@media screen and (max-width: 375px){
-    #main{
-        //padding-bottom:320%;
-    }
-    #information{
-    }
-    #gallery > ul > li, .kaiju-photo .kaiju-article ul > li{
-        height:105px;
-    }
-    
-}
-@media screen and (max-width: 320px){
-    #menu .pc_menu .main_menu li{
-        margin-bottom:0;
-    }
-    #gallery > ul > li, .kaiju-photo .kaiju-article ul > li{
-        height:90px;
-    }
-    #gallery-case figure{
-        padding-top:50px;
-        //box-sizing:border-box;
-        //padding-bottom:250px;
     }
 }
