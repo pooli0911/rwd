@@ -59,22 +59,6 @@ $(function () {
         return false;
     });
 
-    /* photo-modal */
-    $(".modal-trigger a").on('click', function () {
-        $("#mdl-photo").attr('src', $(this).attr("href"));
-        $("#mdl-photo-caption").text($(this).attr("title"));
-        $("#photo-modal").fadeIn();
-
-        return false;
-    });
-    $("#photo-modal").on('click', function () {
-        $("#photo-modal").fadeOut();
-    });
-
-    $(".view_terms #view").on('click', function () {
-        $(".terms_contents").show();
-    });
-
     /* gallery-modal */
     $(".btn-gallery").on('click', function () {
         getImageSize($('#gallery-case figure img'));
