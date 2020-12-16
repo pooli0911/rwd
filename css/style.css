@@ -7,6 +7,11 @@ body{
     background-color: #141414;
     position: relative;
 }
+.fixed{
+    position: fixed!important;
+    width: 100%!important;
+    height: 100%!important;
+}
 img{
     width: 100%;
     height: auto;
@@ -48,7 +53,7 @@ main{
 .contents a{
     color:#000;
 }
-.head{
+header .head{
     height: 80px;
     display: -webkit-flex;
     display: flex;
