@@ -726,7 +726,7 @@ footer nav#utility-menu li a.link:after{
     display:inline-block;
     width:18px;
     height:15px;
-    background:url('../img/icon_external_link.png');
+    background:url("../img/icon_external_link.png");
     background-size:100% auto;
     background-position: center;
     background-repeat:no-repeat;
