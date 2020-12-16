@@ -284,12 +284,12 @@ header #logo .logo_img img{
      z-index: 9000;
      transition: 0.3s ease-in;
  }
- header .contents{
+ header.contents{
      background-color: #fff;
      color: #000;
      transition:0.4s ease-in;
  }
- header .contents a{
+ header.contents a{
      color: #000;
  }
 .lang{
@@ -675,6 +675,7 @@ footer nav ul{
     flex-direction:row-reverse;
     justify-content:space-between;
 }
+
 footer nav ul li{
     display:flex;
 }
