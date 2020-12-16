@@ -14,7 +14,7 @@
   // =========================
 
   var backdrop = '.dropdown-backdrop'
-  var toggle   = '[data-toggle="dropdown"]'
+  var toggle = '[data-toggle="dropdown"]'
   var Dropdown = function (element) {
     $(element).on('click.bs.dropdown', this.toggle)
   }
@@ -38,8 +38,8 @@
     if (e && e.which === 3) return
     $(backdrop).remove()
     $(toggle).each(function () {
-      var $this         = $(this)
-      var $parent       = getParent($this)
+      var $this = $(this)
+      var $parent = getParent($this)
       var relatedTarget = { relatedTarget: this }
 
       if (!$parent.hasClass('open')) return
@@ -60,7 +60,7 @@
 
     if ($this.is('.disabled, :disabled')) return
 
-    var $parent  = getParent($this)
+    var $parent = getParent($this)
     var isActive = $parent.hasClass('open')
 
     clearMenus()
@@ -101,7 +101,7 @@
 
     if ($this.is('.disabled, :disabled')) return
 
-    var $parent  = getParent($this)
+    var $parent = getParent($this)
     var isActive = $parent.hasClass('open')
 
     if (!isActive && e.which != 27 || isActive && e.which == 27) {
@@ -116,9 +116,9 @@
 
     var index = $items.index(e.target)
 
-    if (e.which == 38 && index > 0)                 index--         // up
+    if (e.which == 38 && index > 0) index--         // up
     if (e.which == 40 && index < $items.length - 1) index++         // down
-    if (!~index)                                    index = 0
+    if (!~index) index = 0
 
     $items.eq(index).trigger('focus')
   }
@@ -130,7 +130,7 @@
   function Plugin(option) {
     return this.each(function () {
       var $this = $(this)
-      var data  = $this.data('bs.dropdown')
+      var data = $this.data('bs.dropdown')
 
       if (!data) $this.data('bs.dropdown', (data = new Dropdown(this)))
       if (typeof option == 'string') data[option].call($this)
@@ -139,7 +139,7 @@
 
   var old = $.fn.dropdown
 
-  $.fn.dropdown             = Plugin
+  $.fn.dropdown = Plugin
   $.fn.dropdown.Constructor = Dropdown
 
 
@@ -163,3 +163,4 @@
     .on('keydown.bs.dropdown.data-api', '.dropdown-menu', Dropdown.prototype.keydown)
 
 }(jQuery);
+
