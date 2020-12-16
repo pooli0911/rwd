@@ -1,306 +1,140 @@
 @media screen and (max-width:1440px){
-    #menu .pc_menu .main_menu{
-    }
-    #menu .pc_menu .movie_genre_wrap{
-        left: 15vw;
-        width: 20vw;
-    }
-    header .head #menu .pc_hamburger{
+    .pc_hamburger{
         display: none;
     }
 }
-/* @media screen and (max-width:1280px){
-    #menu .pc_menu .main_menu{
-    }
-    #menu .pc_menu .movie_genre_wrap{
-        left: 15vw;
-        width: 20vw;
-    }
-    header .head #menu .pc_hamburger{
+@media screen and (max-width:1280px){
+    .pc_hamburger{
         display: none;
     }
-} */
+}
 @media screen and (max-width:768px){
-    html,body{
-        font-size:14px;
+    html, body{
+        font-size: 14px;
     }
-
-    header #h_menu ul li{
-        font-size:0.8rem;
+    #h_menu ul li{
+        font-size: 0.8rem;
     }
-
     #main{
-        background-size:100% auto;
-        //background-image:url("../img/sp_top_main_bg.png");
-        padding-bottom:140%;
+        background-size: 100% auto;
+        padding-bottom: 140%;
     }
-
-    #menu .pc_menu .main_menu{
-        width: 36vw;
+    .main_menu{
+        width: 36px;
     }
-    #menu a,
-    #menu .highlight,
-    .movies_navi nav .sub_menu a{
+    #main a, #menu .highlight{
         -webkit-tap-highlight-color: transparent;
     }
-    #menu .pc_menu .sp_lang{
-        display:block;
-    }
-    #menu .pc_menu .sp_lang .lang{
-        display:block;
-        text-align:center;
-    }
-    #menu .pc_menu .sp_lang .lang li{
-        display:block;
-    }
-    #menu .pc_menu .sp_lang .lang li a{
-        display:inline-block;
-        padding:5px 10px;
-        border:1px solid #fff;
-        font-size:12px;
-    }
-    #menu .pc_menu .sp_lang .lang i{
-        /* display:inline-block; */
-        width:16px;
-        height:16px;
-        background-image:url("../img/icon_earth.svg");
-        background-size:contain;
-        background-position:center center;
-        margin-right:0.5em;
-        vertical-align:-4px;
-    }
-    header #h_menu .menu{
-        display:none;
-    }
-    header .head #menu .pc_hamburger{
-        display:block;
-    }
     .lang{
+        display: block;
+        text-align: center;
         justify-content: flex-end;
-        right: 16px;
         top: 27px;
     }
-    #information{
-        width:100%;
-        margin:auto;
+    .lang li{
+        display: block;
     }
-    #information .title, #titles .title{
-        width:80vw;
+    .lang li a{
+        display: inline-block;
+        padding: 2px 7px;
+        border:1px solid #fff;
+        font-size: 12px;
     }
-    #information .info_list{
-        width:90%;
-
+    .lang i{
+        width: 16px;
+        height: 16px;
+        background-image: url("../img/icon_earth.png");
+        background-size: contain;
+        background-position: center center;
+        margin-right: 0.5em;
+        vertical-align: -4px;
     }
-    .information-list li .info_body p, #information .info_list li .info_body p{
-        font-size:1rem;
-        padding-right: 9%x;
-
-    }
-    .movies_navi nav ul li a, .movies_navi nav ul li span{
-        font-size:14px;
-        padding:10px 0;
-    }
-
-
-}
-@media screen and (max-width:640px){
-    main{
-    }
-    .r_arrow:after{
-        margin-left:6px;
-    }
-
-    #page_top{
-        width: 12vw;
-        height: 12vw;
-        right:0;
-        bottom: 12%;
-    }
-    #main{
-        //padding-bottom:130vw;
-        padding-bottom:0;
-    }
-    #main #wrap_main_slide{
-        position: static;
-//        height: 105vw;
-        height: 120vw;
-    }
-    header .head{
-        height:60px;
-    }
-    header #menu .pc_hamburger{
-        display:block;
-        width: 30px;
-        width: 8vw;
-        height:36px;
-        height: 8vw;
-        background-size:100% auto;
-        margin: 0 16px;
-        font-size:.5rem;
-    }
-    header #menu .pc_hamburger .pc_hamburger_icon{
-        height: 2px;
-        margin: 6px auto;
-    }
-    header #menu .pc_hamburger .pc_hamburger_icon:before{
-        border-top: 2px solid #fff;
-        top: 10px;
-    }
-    header #menu .pc_hamburger .pc_hamburger_icon:after{
-        border-top: 2px solid #fff;
-        bottom: 10px;
-    }
-    header.contents #menu .pc_hamburger .pc_hamburger_icon:before,
-    header.contents #menu .pc_hamburger .pc_hamburger_icon:after{
-        border-top: 2px solid #000;
-    }
-    header #menu .pc_hamburger span{
+    #pos .menu{
         display: none;
     }
-
-    header #logo{
-        width: 40px;
-        height: 40px;
+    .pc_hamburger{
+        position: absolute;
+        right: 0;
+        top: 26px;
+        display: block;
     }
-    header #logo .logo_img{
-        width:40px;
-        height:40px;
+    #menu.open .pc_hamburger:before, #menu.open .pc_hamburger:after{
+        position: absolute;
+        top: 50%;
+        right: 0;
+        content:'';
+        display: block;
+        width: 90%;
+        border-top: 2px solid #fff;
     }
-    header #logo .logo_img img{
+    #menu.open .pc_hamburger:before{
+        transform: skewY(-45deg);
+        -webkit-transform: skewY(-45deg);
+        -moz-transform: skewY(-45deg);
+        -ms-transform: skewY(-45deg);
     }
-    header #h_menu{
-        display:none;
-    }
-    #menu .pc_menu .main_menu{
-        padding-top: 60px;
-        padding-left: 0.5rem;
-    }
-    #menu .pc_menu .main_menu li{
-        font-size:1rem;
-        margin-bottom:0.5rem;
-    }
-    #menu .pc_menu .main_menu li.indent{
-    //    padding:0.5rem 2rem .5rem 1rem;
-        padding-left: 0.8rem;
-    }
-    #menu .pc_menu .menu_list > li .highlight,
-    #menu .pc_menu .menu_list > li .movie_genre a{
-        letter-spacing:1px;
-        padding: 0 1rem;
-    }
-    #menu .pc_menu .main_menu .search{
-        padding: 0 .5rem;
-    }
-    #menu .pc_menu #search_form input[name=word]{
-        font-size:16px;
-    }
-
-    #wrap_main_slide .bg_contorols .gauge{
-        width:35px;
-        width:9vw;
+    #menu.open .pc_hamburger:after{
+        transform: skewY(45deg);
+        -webkit-transform: skewY(45deg);
+        -moz-transform: skewY(45deg);
+        -ms-transform: skewY(45deg);
     }
     #information{
-        bottom:auto;
-        top:130vw;
-        position:static;
-        padding-bottom:10%;
+        width: 100%;
+        margin: auto;
     }
-    #information h3,
-    #titles h3,
-    #studio h3{
-        font-size:1.6rem;
-        font-size:7vw;
-        font-weight:100;
-        padding:1.5rem 1rem 2rem;
+    #information .title, #titles .title{
+        width: 80vw;
     }
-    #titles{
-        position:static;
-        margin-top:100px;
+    .info_list{
+        width: 90%;
     }
-
-    #information .info_list li a{
-        padding: 1.2rem;
-        font-size:.8rem;
+    .info_body p, .info_list p{
+        font-size: 1rem;
+        padding-right: 9%;
     }
-    #information .info_list li:last-child a{
-        line-height:1;
-        padding: 1.2rem;
-        font-size:.8rem;
+    #gallery h3{
+        font-size: 20px;
     }
-    .information-list li .info_body p,
-    #information .info_list li .info_body p{
-        padding-right:9%;
-        line-height:1.2;
+    #gallery > ul >li{
+        width: 48%;
     }
-    .information-list li .info_body span,
-    #information .info_list li .info_body span{
-        font-size:.8rem;
+    #gallery > ul >li img{
+        margin-top: 0;
     }
-
-
-    #titles .link {
-        right:2%;
+    #gallery > ul > li:nth-child(2n+1){
+        margin-left:0;
     }
-
-    .gallery li:hover{
-        z-index:0;
+    #gallery ul > li:nth-child(2n){
+        margin-left:1%;
     }
-    .gallery li:hover .hover
-    {
-        display:none;
+    #gallery ul > li{
+        margin-top:2%;
     }
-    #lineup > .gallery{
-        position: relative;
-    }
-    #lineup > .gallery:after{
-        content:'';
-        display:block;
-        width:100%;
-//        height:50%;
-        height:90%;
-        position:absolute;
-        bottom:0;
-        left:0;
-        background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 65%, rgba(0,0,0,1) 100%); /* FF3.6-15 */
-        background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,1) 65%,rgba(0,0,0,1) 100%); /* Chrome10-25,Safari5.1-6 */
-        background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,1) 65%,rgba(0,0,0,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    }
-    #lineup > .gallery li{
-        width:33.33%;
-    }
-
-    #lineup > .gallery li:nth-child(n + 7){
-        display:none;
-    }
-    #lineup ul li .poster_img:after{
-        background:rgba(0,0,0,0.7);
-    }
-    #lineup .wrap_slider{
-        margin-top:-90px;
-    }
-
-/*
-    #main .sp_grd{
-        display:block;
-        position:absolute;
-        left:0;
-        right:0;
-        top:46%;
-        z-index:15;
-        width:100%;
-        height:100px;
-        background-image:url(/img/top_bg_gradation.png);
-        background-repeat:repeat-x;
-        background-size:auto 100%;
-    }
-*/
-
     /* slider */
-    .slider{
-        margin-top:-50px;
+    /* .slider{
+        //margin-top:-50px;
+        //padding-bottom:20%;
+    }
+    #kurosawa .slider{
         padding-bottom:20%;
     }
-    
+    #lineup .slider{
+        display: block;
+    }
+    .slider .gallery li:nth-child(n + 5){
+        //display: none;
+    }
+
+    .prev_wrap,
+    .next_wrap{
+        background:none;
+        top:-35px;
+    }
+    #kurosawa .prev_wrap,
+    #kurosawa .next_wrap{
+        top:0;
+    }
     .prev,
     .next{
         width: 50%;
@@ -331,7 +165,7 @@
         transform: rotate(135deg);
     }
     .slider{
-         transform:translateY(-10%);
+         //transform:translateY(-10%);
     }
     .slider .gallery li .hover,
     .slider .gallery li .hover .info{
@@ -377,6 +211,7 @@
         -moz-transition:-moz-transform .3s ease-in;
         -ms-transition:-ms-transform .3s ease-in;
     }
+    .slider ul li .poster_img { }
     .slider ul .slick-center .poster_img:after{
         background: none;
     }
@@ -421,34 +256,7 @@
     }
     .slider li .hover .info{
         height:40px;
-    }
-    .gallery li .hover .movie_title{
-        font-size:1rem;
-    }
-
-    #line .gallery li a{
-       // pointer-events: none;
-    }
-
-    #godzilla .main_img{
-        padding-bottom:86%;
-        background-image: url("../img/sp.top_godzilla_img.jpg");
-        background-repeat: no-repeat;
-        background-position: top center;
-        background-size: 100% auto;
-    }
-    #godzilla .title{
-        width:40%;
-//        top:20%;
-        top:30%;
-   }
-   #godzilla .title .link{
-       margin-top:10px;
-   }
-    #godzilla .title .link a img{
-        width:90%;
-    }
-
+    } */
     footer nav{
         padding-top:2rem;
     }
@@ -458,11 +266,9 @@
         margin:0 auto;
     }
     footer nav ul li{
-        /*display:table-row;*/
         flex-wrap:wrap;
     }
     footer nav ul li a{
-        /*display:table-cell;*/
         display:block;
         width:43%;
         padding:3px 12px;
@@ -479,117 +285,152 @@
     footer nav#utility-menu li a.link:after{
         margin-left:6px;
     }
-
-
-
-
-    #gallery > ul > li, .kaiju-photo .kaiju-article ul > li{
-        width:48%;
+    footer nav#utility-menu li a.link.icon.external:after{
+        width:12px;
+        height:10px;
     }
-    #gallery > ul > li{
-        height:117px;
-        max-height:none;
-        margin-bottom:1%;
+}
+@media screen and (max-width:640px){
+    .r_arrow:after{
+        margin-left: 6px;
     }
-
-    .information-list .info_contents{
-        float:none;
-        margin-left:70px;
-        padding-right:10px;
+    #page_top{
+        width: 12vw;
+        height: 12vw;
+        right: 0;
+        bottom: 12%;
     }
-    .information-list li .more, #information .info_list li .more{
-//      top:auto;
-        right:3%;
-        bottom:0;
-//      margin-top:0;
-        font-size:0.8rem;
-        color:transparent;
+    #main{
+        padding-bottom: 0;
     }
-    .information-list li .info_category span.cate,
-    #information .info_list li .info_category span.cate{
-        padding:3px;
-        width:auto;
-        line-height:1
+    #information{
+        bottom: auto;
+        top: 130vw;
+        position: static;
+        padding-bottom: 10%;
+    }
+    #information h3, #titles h3{
+        font-size: 7vw;
+        font-weight: 100;
+        padding: 1.5rem 1rem 2rem;
+    }
+    #titles{
+        position: static;
+        margin-top: 100px;
+    }
+    #information .info_list li a{
+        padding: 1.2rem;
+        font-size: 0.8rem;
+    }
+    #information .info_list li:last-child a{
+        line-height:1;
+        padding: 1.2rem;
+        font-size:.8rem;
     }
     .information-list{
-        width:90%;
+        width: 90%;
     }
-    .doc-body.info_detail .info_body{
-        width:90%;
+    .information-list li .info_body p,
+    .info_list li .info_body p{
+        padding-right:9%;
+        line-height:1.2;
     }
-    .info_body h3{
-        line-height:2rem;
+    .information-list li .info_body span,
+    .info_list li .info_body span{
+        font-size:0.8rem;
     }
-    .information_image{
-        float:none;
-        width:60%;
-        margin:0 auto 20px;
+    .info_body{
+        line-height: 2rem;
     }
-    .information_contents{
-
+    .cate{
+        padding: 3px;
+        width: auto;
+        line-height: 1;
     }
-    #titles .link {
+    .more{
+        top: center;
+        right: 3%;
+        bottom: 0;
+        margin-top: 0;
+        font-size: 0.8rem;
+        color: transparent;
+    }
+    #titles .link{
+        right: 2%;
         position: static;
         margin: 0px auto 20px;
         text-align:center;
         width:42%;
     }
-    #gallery-case *{
-        box-sizing:border-box;
+    .gallery li:hover{
+        z-index: 0;
     }
-    #gallery-case figure{
-        padding-top:50px;
-        height: 60%;
-        //padding-bottom:310px;
-        padding-bottom: 10px;
+    .gallery li:hover .hover{
+        display: none;
     }
-    #gallery-case figure img.port{
-        width:auto;
-        max-width:80%;
-        height:auto;
-        max-height:100%
+    #lineup > .gallery{
+        position: relative;
     }
-    #gallery-case figure img.land{
-        width:90%;
-        max-width: none;
-        height:auto;
+    #lineup > .gallery:after{
+        content:'';
+        display:block;
+        width:100%;
+        height:90%;
+        position:absolute;
+        bottom:0;
+        left:0;
+        background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 65%, rgba(0,0,0,1) 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,1) 65%,rgba(0,0,0,1) 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,1) 65%,rgba(0,0,0,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     }
-    #gallery-case ul{
-        /*height:60px;*/
-        height: 40%;
+    #lineup > .gallery li{
+        width:33.33%;
     }
-    #gallery-case ul li{
-        /*width:60px;
-        height:60px;*/
-        width:32%;
-        height:50%;
-        text-align:center;
-        overflow:hidden;
-        max-height:none;
+
+    #lineup > .gallery li:nth-child(n + 7){
+        display:none;
     }
-    #gallery-case ul li img{
-        width:auto;
-        /*max-width:60px;*/
-        max-width:99%;
-        height:auto;
-        /*max-height:60px;*/
-        max-height:80%;
+    #lineup ul li .poster_img:after{
+        background:rgba(0,0,0,0.7);
     }
-    #gallery-case .close{
-        width:30px;
-        height:10px;
-        text-indent:-200%;
-        overflow:hidden;
+    #lineup .wrap_slider{
+        margin-top:-90px;
+    }
+    .gallery li:hover .hover .hover_box{
+        margin:0 auto;
+    }
+    .slider li .hover .info{
+        height:40px;
+    }
+    .gallery li .hover .movie_title{
+        font-size:1rem;
     }
     
-    #menu .pc_menu .main_menu .search form{
-        padding-right:30px;
+    #godzilla .main_img{
+        padding-bottom: 86%;
+        background-image: url("../img/top_bg_godzilla.shadow.jpg");
+        background-repeat: no-repeat;
+        background-position: top center;
+        background-size: 100% auto;
     }
-    #menu .pc_menu .search .submit{
-        right:0.5rem;
+    #godzilla .title{
+        width: 35%;
+        top: 20%;
     }
-    footer nav#utility-menu li a.link.icon.external:after{
-        width:12px;
-        height:10px;
+    #godzilla .title .link{
+        margin-top: 10px;
+    }
+    .link a img{
+        width: 90%;
+    }
+}
+@media screen and (max-width:375px){
+    #gallery > ul >li{
+        height: 105px;
+    }
+}
+@media screen and (max-width:320px){
+    #gallery > ul >li{
+        height: 90px;
     }
 }
