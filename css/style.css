@@ -84,7 +84,7 @@ header #logo .logo_img img{
     padding:0 15px;
 }
 /* menu */
-.menu_bg{
+/* .menu_bg{
     display:none;
     position: fixed;
     background-color: rgba(0,0,0,0.5);
@@ -98,7 +98,7 @@ header #logo .logo_img img{
     overflow: hidden;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
-}
+} */
 .pc_hamburger{
     right: 27px;
     position: absolute;
