@@ -1,0 +1,119 @@
+/* main slide */
+#wrap_main_slide{
+    position:absolute;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    width:100%;
+    height:100%;
+}
+#wrap_main_slide .slides{
+    width:100%;
+    height:100%;
+    background-position:top center;
+    background-repeat:no-repeat;
+    background-size:100% auto;
+    transition:opacity .7s ease-in;
+    pointer-events: none;
+}
+
+#wrap_main_slide .slides.all_titles{
+    position: relative;
+    pointer-events: none;
+}
+#wrap_main_slide .slides.all_titles:after{
+//    content: '';
+//    display: block;
+//    width: 100%;
+//    height: 100%;
+//    background: rgba(0,0,0, .6);
+//    position: absolute;
+//    top: 0;
+//    left: 0;
+//    pointer-events: none;
+}
+
+/* webkit */
+#wrap_main_slide .slides.all_titles .all_titles_frame .reflect:before{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0, .6);
+    position: absolute;
+    top: 0;
+    left: 0;   
+}
+#wrap_main_slide .slides.all_titles .all_titles_frame .reflect{
+    //-webkit-box-reflect: below 0 -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, .3)), to(transparent));
+    -webkit-box-reflect: below 0 linear-gradient(to top, rgba(255, 255, 255, .4) 10%, transparent 30%);
+    position: relative;
+}
+/* Firefox */
+#wrap_main_slide .slides.all_titles .all_titles_frame .reflect:after{
+    content: "";
+    position: absolute;
+    /* .reflect と同じサイズのブロック（反射部分）を真下に作る。*/
+    top: 100%; right: 0; bottom: -100%; left: 0;
+    opacity: .4;
+    /* 反射部分を 10px 下げて、鏡面効果（反転）させる。 */
+     -moz-transform: scaleY(-1);
+     background:rgba(0,0,0,.6);
+}
+#wrap_main_slide .slides.all_titles .all_titles_frame .reflect:after{
+    background: -moz-linear-gradient(top, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 70%, rgba(0,0,0,0) 100%), -moz-element(#reflect);
+}
+
+#wrap_main_slide .slides.all_titles img{
+    width:20%;
+    height:auto;
+    pointer-events: none;
+}
+#wrap_main_slide .bg_contorols{
+    display: -webkit-flex; /* Safari */
+    display: flex;
+    position: absolute;
+    top:80px;
+    right: 2%;
+    z-index:100;
+}
+
+#wrap_main_slide .bg_contorols.off{
+    z-index:0;
+}
+#wrap_main_slide .bg_contorols li{
+    margin-left:3px;
+    padding:10px 0;
+    cursor:pointer;
+}
+#wrap_main_slide .bg_contorols .gauge{
+    width:55px;
+    height:5px;
+    background:#000;
+    position:relative;
+}
+#wrap_main_slide .bg_contorols .gauge .bar{
+    display:block;
+    position:absolute;
+    width:0;
+    height:100%;
+    background:#a58633;
+    transition-timing-function: ease-out;
+}
+#wrap_main_slide .bg_contorols .active .gauge .bar{
+    width:100%;
+    transition-property: width;
+}
+
+@media screen and (max-width:640px){
+
+    #wrap_main_slide .slides.all_titles .all_titles_frame{
+    }
+    #wrap_main_slide .slides.all_titles img{
+        width:33.3%;
+    }
+    #wrap_main_slide .slides.all_titles img:nth-child(n+7){
+        display:none;
+    }
+}

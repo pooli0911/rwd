@@ -9,7 +9,7 @@
         display: none;
     }
 }
-@media screen and (max-width:1280px){
+/* @media screen and (max-width:1280px){
     #menu .pc_menu .main_menu{
     }
     #menu .pc_menu .movie_genre_wrap{
@@ -19,7 +19,7 @@
     header .head #menu .pc_hamburger{
         display: none;
     }
-}
+} */
 @media screen and (max-width:768px){
     html,body{
         font-size:14px;

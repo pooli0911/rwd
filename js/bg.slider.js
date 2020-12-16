@@ -31,6 +31,8 @@
             }
 
             var li = Array.prototype.slice.call($controls[0].querySelectorAll('li'), 0);
+
+            // クリックイベント
             li.forEach(function (el, idx) {
                 el.addEventListener('click', function () {
                     console.log(i);
@@ -45,7 +47,9 @@
                 }, false);
             });
 
+            // ループの記述
             function bgLoop() {
+                // all titlesを取得
                 if (i === 1) {
                     var allTitles = getAllTitles();
 
@@ -61,10 +65,13 @@
                     $slides[0].innerHTML = '<img src="' + param.settings.img_path + file_name + '" >';
                 }
 
+                // 画像を読み込んだらスタート
                 $slides.find('img').imagesLoaded(function () {
 
+                    // 画像のフェードイン
                     $slides[0].style.opacity = '100';
 
+                    // コントロールのゲージ
                     li.forEach(function (elem, index) {
                         var bar = elem.querySelector('.bar');
                         if (i === index) {
@@ -80,9 +87,10 @@
 
                     changeTitle(titleWrap, i);
 
+                    // 画像のフェードアウト
                     fade_id = setTimeout(function () {
                         $slides[0].style.opacity = '0';
-                    }, param.settings.duration - 700);
+                    }, param.settings.duration - 700); // css3 transitionと合わせる
 
                     i++;
                     if (i === img_cnt) i = 0;
@@ -118,6 +126,16 @@
                         //h2.innerText = 'GODZILLA';
                         //link.innerHTML = '<a href="/movies/godzilla.html"><img src="/img/top_link_godzilla_bk.png" alt="Gozilla Movies"></a>';
                         wrap.insertAdjacentHTML('afterBegin', '<a href="/movies/godzilla.html"><h2>Godzilla</h2></a><div class="link"></div>');
+                        break;
+                    case 3: // kurosawa
+                        //h2.innerText = 'Kurosawa';
+                        //link.innerHTML = '<a href="/kurosawa/movies.html"><img src="/img/top_link_kurosawa.png" alt="Kurosawa Movies"></a>';
+                        if ($('#lang').val() === '_zh') {
+                            wrap.insertAdjacentHTML('afterBegin', '<a href="/kurosawa/movies.html"><h2>&#40657;&#27901;&#26126;</h2></a><div class="link"></div>');
+                        }
+                        else {
+                            wrap.insertAdjacentHTML('afterBegin', '<a href="/kurosawa/movies.html"><h2>Kurosawa</h2></a><div class="link"></div>');
+                        }
                         break;
                 }
             }

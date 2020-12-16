@@ -7,8 +7,14 @@
     <title>TOHO</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/initiral.css">
-    <link rel="stylesheet" href="css/rwd.css">
-    <link rel="stylesheet" href="css/slider.css">
+    <link rel="stylesheet" href="css/lms.css">
+    <link rel="stylesheet" href="css/top.slider.css">
+    <link rel="stylesheet" href="css/bg_slide.css">
+    <link rel="stylesheet" href="js/bg.slider.js">
+    <link rel="stylesheet" href="js/jquery-1.9.0.min.js">
+    <link rel="stylesheet" href="js/jquery.easing.1.3.js">
+    <link rel="stylesheet" href="js/script.js">
+    <link rel="stylesheet" href="js/top.slider.js">
 </head>
 
 <body>
@@ -17,6 +23,18 @@
             <input type="hidden" id="lang" value="">
             <header class="">
                 <div class="head">
+                    <!-- logo -->
+                    <div id="logo">
+                        <a href="/">
+                            <h1 class="logo_img"><img src="img/logo.png" alt="TOHO" width="56" height="56"></h1>
+                        </a>
+                    </div>
+                    <!-- 導覽列 -->
+                    <nav id="h_menu">
+                        <ul class="lang">
+                            <li><a href="#" class="lang_zh" id="h_menu"><i></i>中文</a></li>
+                        </ul>
+                    </nav>
                     <div id="menu">
                         <button type="button" class="pc_hamburger">
                             <div class="pc_hamburger_icon"></div>
@@ -28,40 +46,41 @@
                             <div class="main_menu">
                                 <div class="menu_list_wrap">
                                     <ul class="menu_list">
-                                        <li>
-                                            <a href="/information" class="highlight">Information</a>
+                                        <li class="titles">
+                                            <a href="#" class="highlight ">Information</a>
+
                                         </li>
 
                                         <li class="titles">
-                                            <a href="/movies/index" class="highlight ">All titles</a>
+                                            <a href="#" class="highlight ">All titles</a>
 
                                         </li>
 
-                                        <li class="titles indent">
-                                            <span class="movie_category highlight " data-toggle="dropdown" role="button"
-                                                aria-expanded="false">Film</span>
+                                        <li class="titles">
+                                            <a href="#" class="highlight">
+                                                Film </a>
                                         </li>
 
-                                        <li class="titles indent">
-                                            <span class="movie_category tv highlight " data-toggle="dropdown"
-                                                role="button" aria-expanded="false">TV Series</span>
+                                        <li class="titles">
+                                            <a href="#" class="highlight">
+                                                TV Series </a>
                                         </li>
 
-                                        <li class="titles indent">
-                                            <span class="movie_category highlight " data-toggle="dropdown" role="button"
-                                                aria-expanded="false">Godzilla</span>
+                                        <li class="titles">
+                                            <a href="#" class="highlight">
+                                                Godzilla </a>
                                         </li>
 
-                                        <li class="titles indent">
-                                            <span class="movie_category highlight " data-toggle="dropdown" role="button"
-                                                aria-expanded="false">Kurosawa</span>
+                                        <li class="titles">
+                                            <a href="#" class="highlight">
+                                                Kurosawa </a>
                                         </li>
-                                        <li>
-                                            <a href="/studio-theater" class="highlight">
+                                        <li class="titles">
+                                            <a href="#" class="highlight">
                                                 Studio </a>
                                         </li>
-                                        <li>
-                                            <a href="/company" class="highlight">
+                                        <li class="titles">
+                                            <a href="#" class="highlight">
                                                 Company </a>
                                         </li>
                                     </ul>
@@ -69,19 +88,7 @@
                             </div><!-- /.main_menu -->
                         </nav>
                     </div><!-- /#menu -->
-                    <!-- logo -->
-                    <div id="logo">
-                        <a href="/">
-                            <h1 class="logo_img"><img src="img/logo.png" alt="TOHO" width="56" height="56"></h1>
-                        </a>
-                    </div>
-                    <!-- language -->
-
-                    <!-- 導覽列 -->
-                    <nav id="h_menu">
-                        <ul class="lang">
-                            <li><a href="#" class="lang_zh" id="h_menu"><i></i>中文</a></li>
-                        </ul>
+                    <nav id="pos">
                         <ul class="menu">
                             <li class=""><a href="#">Information</a></li>
                             <li class=""><a href="#">All Titles</a></li>
@@ -339,12 +346,12 @@
                                     <li>
                                         <a href="#">
                                             <div class="poster_img"
-                                                style="background-image:url(img/img_golzilla_1.png);">
+                                                style="background-image:url(/img/img_golzilla_1.png);">
                                             </div>
                                             <div class="hover">
                                                 <div class="hover_box">
                                                     <div class="poster_img"
-                                                        style="background-image:url(img/img_golzilla_1.png);">
+                                                        style="background-image:url(/img/img_golzilla_1.png);">
                                                     </div>
                                                 </div>
                                             </div>
@@ -353,12 +360,12 @@
                                     <li>
                                         <a href="#">
                                             <div class="poster_img"
-                                                style="background-image:url(img/img_golzilla_2.png);">
+                                                style="background-image:url(/img/img_golzilla_2.png);">
                                             </div>
                                             <div class="hover">
                                                 <div class="hover_box">
                                                     <div class="poster_img"
-                                                        style="background-image:url(img/img_golzilla_2.png);">
+                                                        style="background-image:url(/img/img_golzilla_2.png);">
                                                     </div>
                                                 </div>
                                             </div>
@@ -367,12 +374,12 @@
                                     <li>
                                         <a href="#">
                                             <div class="poster_img"
-                                                style="background-image:url(img/img_golzilla_3.png);">
+                                                style="background-image:url(/img/img_golzilla_3.png);">
                                             </div>
                                             <div class="hover">
                                                 <div class="hover_box">
                                                     <div class="poster_img"
-                                                        style="background-image:url(img/img_golzilla_3.png);">
+                                                        style="background-image:url(/img/img_golzilla_3.png);">
                                                     </div>
                                                 </div>
                                             </div>
@@ -381,12 +388,12 @@
                                     <li>
                                         <a href="#">
                                             <div class="poster_img"
-                                                style="background-image:url(img/img_golzilla_4.png);">
+                                                style="background-image:url(/img/img_golzilla_4.png);">
                                             </div>
                                             <div class="hover">
                                                 <div class="hover_box">
                                                     <div class="poster_img"
-                                                        style="background-image:url(img/img_golzilla_4.png);">
+                                                        style="background-image:url(/img/img_golzilla_4.png);">
                                                     </div>
                                                 </div>
                                             </div>
@@ -395,12 +402,12 @@
                                     <li>
                                         <a href="#">
                                             <div class="poster_img"
-                                                style="background-image:url(img/img_golzilla_5.png);">
+                                                style="background-image:url(/img/img_golzilla_5.png);">
                                             </div>
                                             <div class="hover">
                                                 <div class="hover_box">
                                                     <div class="poster_img"
-                                                        style="background-image:url(img/img_golzilla_5.png);">
+                                                        style="background-image:url(/img/img_golzilla_5.png);">
                                                     </div>
                                                 </div>
                                             </div>
@@ -409,12 +416,12 @@
                                     <li>
                                         <a href="#">
                                             <div class="poster_img"
-                                                style="background-image:url(img/img_golzilla_6.png);">
+                                                style="background-image:url(/img/img_golzilla_6.png);">
                                             </div>
                                             <div class="hover">
                                                 <div class="hover_box">
                                                     <div class="poster_img"
-                                                        style="background-image:url(img/img_golzilla_6.png);">
+                                                        style="background-image:url(/img/img_golzilla_6.png);">
                                                     </div>
                                                 </div>
                                             </div>
@@ -423,12 +430,12 @@
                                     <li>
                                         <a href="#">
                                             <div class="poster_img"
-                                                style="background-image:url(img/img_golzilla_7.png);">
+                                                style="background-image:url(/img/img_golzilla_7.png);">
                                             </div>
                                             <div class="hover">
                                                 <div class="hover_box">
                                                     <div class="poster_img"
-                                                        style="background-image:url(img/img_golzilla_7.png);">
+                                                        style="background-image:url(/img/img_golzilla_7.png);">
                                                     </div>
                                                 </div>
                                             </div>
@@ -437,12 +444,12 @@
                                     <li>
                                         <a href="#">
                                             <div class="poster_img"
-                                                style="background-image:url(img/img_golzilla_8.png);">
+                                                style="background-image:url(/img/img_golzilla_8.png);">
                                             </div>
                                             <div class="hover">
                                                 <div class="hover_box">
                                                     <div class="poster_img"
-                                                        style="background-image:url(img/img_golzilla_8.png);">
+                                                        style="background-image:url(/img/img_golzilla_8.png);">
                                                     </div>
                                                 </div>
                                             </div>
@@ -451,12 +458,12 @@
                                     <li>
                                         <a href="#">
                                             <div class="poster_img"
-                                                style="background-image:url(img/img_golzilla_9.png);">
+                                                style="background-image:url(/img/img_golzilla_9.png);">
                                             </div>
                                             <div class="hover">
                                                 <div class="hover_box">
                                                     <div class="poster_img"
-                                                        style="background-image:url(img/img_golzilla_9.png);">
+                                                        style="background-image:url(/img/img_golzilla_9.png);">
                                                     </div>
                                                 </div>
                                             </div>
@@ -465,12 +472,12 @@
                                     <li>
                                         <a href="#">
                                             <div class="poster_img"
-                                                style="background-image:url(img/img_golzilla_10.png);">
+                                                style="background-image:url(/img/img_golzilla_10.png);">
                                             </div>
                                             <div class="hover">
                                                 <div class="hover_box">
                                                     <div class="poster_img"
-                                                        style="background-image:url(img/img_golzilla_10.png);">
+                                                        style="background-image:url(/img/img_golzilla_10.png);">
                                                     </div>
                                                 </div>
                                             </div>
@@ -505,9 +512,11 @@
     </footer>
     <script src="/js/jquery.easing.1.3.js"></script>
     <script src="/js/jquery-1.9.0.min.js"></script>
-    <script src="/js/slider.js"></script>
-    <script src="js/wrap_slider.js"></script>
+    <script src="/js/bg.slider.js"></script>
+    <script src="js/top.slider.js"></script>
     <script src="js/script.js"></script>
+    <script src="js/analytics.js"></script>
+    <script src="js/hm.js"></script>
 </body>
 
 </html>
