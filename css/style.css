@@ -676,8 +676,6 @@ footer nav ul{
     justify-content:space-between;
 }
 footer nav ul li{
-}
-footer nav ul li{
     display:flex;
 }
 footer nav ul li a{
@@ -732,5 +730,5 @@ footer nav#utility-menu li a.link:after{
 #page_top a{
     display: block;
     width: 100%;
-    height: 100%:
+    height: 100%;
 }
