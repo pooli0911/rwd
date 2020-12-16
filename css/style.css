@@ -718,10 +718,26 @@ footer nav#utility-menu li a.link.icon.external:after{
 footer nav#utility-menu li a.link:after{
     margin-left:10px;
 }
+.icon.external{
+    font-size:1.3rem;
+}
+.icon.external:after{
+    content:'';
+    display:inline-block;
+    width:18px;
+    height:15px;
+    background:url('../img/icon_external_link.png');
+    background-size:100% auto;
+    background-position: center;
+    background-repeat:no-repeat;
+    margin-left:20px;
+}
+.terms .icon.external:after{
+    margin-left:5px;
+}
 
 /* pagetop */
 #page_top{
-    /* background-image: url("../img/page_top.png"); */
     display:none;
     position: fixed;
     right: 2%;
