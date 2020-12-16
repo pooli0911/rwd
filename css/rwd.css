@@ -31,7 +31,7 @@
 
     #main{
         background-size:100% auto;
-        //background-image:url(/img/sp_top_main_bg.png);
+        //background-image:url("../img/sp_top_main_bg.png");
         padding-bottom:140%;
     }
 
@@ -63,7 +63,7 @@
         /* display:inline-block; */
         width:16px;
         height:16px;
-        background-image:url(/img/icon_earth.svg);
+        background-image:url("../img/icon_earth.svg");
         background-size:contain;
         background-position:center center;
         margin-right:0.5em;
@@ -432,7 +432,7 @@
 
     #godzilla .main_img{
         padding-bottom:86%;
-        background-image: url(/img/sp.top_godzilla_img.jpg);
+        background-image: url("../img/sp.top_godzilla_img.jpg");
         background-repeat: no-repeat;
         background-position: top center;
         background-size: 100% auto;
