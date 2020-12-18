@@ -607,7 +607,7 @@ main.top{
 }
 .gallery .slick-list{
     overflow: visible;
-    overflow:unset;
+    overflow: unset;
 }
 .gallery li:hover{
     z-index:1000;
@@ -619,7 +619,31 @@ main.top{
 .gallery li a{
     color: #000;
 }
+.gallery li .hover{
+    width:100%;
+    position:absolute;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    margin:auto;
+    opacity:0;
+    -webkit-transition:opacity .3s;
+    transition:opacity .3s;
+}
+.gallery li:hover .hover{
+    display:block;
+    opacity:1;
+    -webkit-transition:opacity .3s;
+    transition:opacity .3s;
+}
 
+.gallery li:hover .hover .hover_box{
+    box-shadow: 0 0 40px rgba(0,0,0,0.9);
+}
+.gallery li .hover .poster_img:after{
+    background-color:inherit!important;
+}
 /* godzilla */
 #godzilla .main_img{
     background-image: url("../img/top_bg_godzilla.shadow.jpg");
