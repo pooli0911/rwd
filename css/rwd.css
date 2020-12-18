@@ -19,7 +19,7 @@
     }
     .pc_hamburger{
         position: absolute;
-        right: 0;
+        right: 10px;
         top: 26px;
         display: block;
     }
