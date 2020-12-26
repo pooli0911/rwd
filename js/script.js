@@ -11,9 +11,9 @@ $(function () {
 
             if (s > m) {
                 $header[0].classList.add('contents');
-                $header.find('#logo img').attr('src', 'img/logo_black.png');
+                $header.find('#logo img').attr('src', '/img/logo_fixed.png');
             } else {
-                $header.find('#logo img').attr('src', 'img/logo.png');
+                $header.find('#logo img').attr('src', '/img/logo_main.png');
                 $header[0].classList.remove('contents');
             }
 

@@ -4,7 +4,7 @@
     overflow-x: hidden;
 }
 body{
-    background-color: #141414;
+    background-color: #fff;
     position: relative;
 }
 .fixed{
@@ -29,7 +29,7 @@ main{
 #main{
     width: 100%;
     background-size: cover;
-    background-color: #000;
+    background-color: #fff;
     background-repeat: no-repeat;
     text-align: center;
     position: relative;
@@ -76,8 +76,8 @@ header #logo{
 }
 .logo_img{
     display: block;
-    width: 56px;
-    height: 56px;
+    width: auto;
+    height: 30px;
     text-align: center;
     -ms-interpolation-mode: bicubic;
 }
@@ -93,7 +93,7 @@ header #logo .logo_img img{
 .menu_bg{
     display:none;
     position: fixed;
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(21,58,77,0.5);
     top: 0;
     right: 0;
     bottom: 0;
@@ -140,7 +140,6 @@ header #logo .logo_img img{
     height: 3px;
     background-color: #fff;
     margin: 10px 0;
-    position: relative;
 }
 .pc_hamburger_icon:before, .pc_hamburger_icon:after{
     content:'';
@@ -299,28 +298,6 @@ header #logo .logo_img img{
     top: 27px;
     align-items: center;
     -webkit-align-items:center;
-}
-.lang a{
-    display: inline-block;
-    padding: 2px 7px;
-    font-weight: 300;
-    border: 1px solid #fff;
-}
-.contents #h_menu ul.lang a{
-    border: 1px solid #000;
-}
-.lang li i{
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    background-image: url("../img/icon_earth.png");
-    background-size: contain;
-    background-position: center center;
-    margin-right: 0.5em;
-    vertical-align: -5px;
-}
-.contents #h_menu ul.lang li i{
-    background-image: url("../img/icon_earth_black.svg");
 }
 
 #pos ul.menu{
@@ -545,7 +522,7 @@ header.contents #h_menu ul.menu li{
 .poster_img:after{
     content:'';
     display: block;
-    background-color: rgba(0,0,0,0.4);
+    background-color: #fff;
     position: absolute;
     top: 0;
     left: 0;
